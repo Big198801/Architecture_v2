@@ -33,6 +33,7 @@ public abstract class Car{
     }
     protected  void WipesTurnOn(){
         System.out.printf("%s's wipes is on\n", modelName);
+        System.out.println("\n");
     }
 
 }
