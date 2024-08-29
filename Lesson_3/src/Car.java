@@ -1,4 +1,4 @@
-public abstract class Car{
+public abstract class Car implements IFogLights{
     protected String autoMarkName;
     protected String modelName;
     protected String color;
@@ -31,9 +31,13 @@ public abstract class Car{
     protected  void lightsTurnOn(){
         System.out.printf("%s's lights is on\n", modelName);
     }
-    protected  void WipesTurnOn(){
+    protected  void wipesTurnOn(){
         System.out.printf("%s's wipes is on\n", modelName);
         System.out.println("\n");
     }
 
+    @Override
+    public void turnFogLightsOn() {
+        System.out.printf("%s %s fog lights is on\n",autoMarkName, modelName);
+    }
 }
